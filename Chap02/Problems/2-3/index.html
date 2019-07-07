@@ -5725,7 +5725,7 @@ $$</p>
     <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">n</span>
         <span class="n">temp</span> <span class="o">=</span> <span class="mi">1</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="n">to</span> <span class="n">k</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span> <span class="n">to</span> <span class="n">k</span>
             <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">*</span> <span class="n">x</span>
         <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">a</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">*</span> <span class="n">temp</span>
 </pre></div>
@@ -5738,7 +5738,7 @@ $$</p>
 \begin{aligned}
 y &amp; = a_i + x \sum_{k = 0}^{n - (i + 1)} a_{k + i + 1} x^k \\
   &amp; = a_i x^0 + \sum_{k = 0}^{n - i - 1} a_{k + i + 1} x^{k + 1} \\
-  &amp; = a_i x^0 \sum_{k = 1}^{n - i} a_{k + i} x^k \\
+  &amp; = a_i x^0 + \sum_{k = 1}^{n - i} a_{k + i} x^k \\
   &amp; = \sum_{k = 0}^{n - i} a_{k + i} x^k.
 \end{aligned}
 $$</p>
